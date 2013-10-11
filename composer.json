@@ -4,7 +4,7 @@
     "authors": [
         {
             "name": "RayKwok",
-            "email": "ruizkor@gmail.com"
+            "email": "ray.kwok@live.com"
         }
     ],
     "require": {
@@ -12,6 +12,9 @@
         "illuminate/support": "4.0.x"
     },
     "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
         "psr-0": {
             "Raypower\\Taobaoapi": "src/"
         }
