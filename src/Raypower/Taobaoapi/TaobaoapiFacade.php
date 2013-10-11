@@ -4,7 +4,7 @@
 namespace Raypower\Taobaoapi;
 use Illuminate\Support\Facades\Facade;
 
-class TaobaoapiFacades extends Facade
+class TaobaoapiFacade extends Facade
 {
     protected static function getFacadeAccessor()
     {

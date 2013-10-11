@@ -104,6 +104,7 @@ class TopClient
 
 	protected function logCommunicationError($apiName, $requestUrl, $errorCode, $responseTxt)
 	{
+        return ;
 		$localIp = isset($_SERVER["SERVER_ADDR"]) ? $_SERVER["SERVER_ADDR"] : "CLI";
 		$logger = new LtLogger;
 		$logger->conf["log_file"] = rtrim(TOP_SDK_WORK_DIR, '\\/') . '/' . "logs/top_comm_err_" . $this->appkey . "_" . date("Y-m-d") . ".log";
@@ -124,6 +125,7 @@ class TopClient
 
 	public function execute($request, $session = null)
 	{
+        $result = new stdClass();
 		if($this->checkRequest) {
 			try {
 				$request->check();
@@ -167,7 +169,7 @@ class TopClient
 		}
 		catch (Exception $e)
 		{
-			$this->logCommunicationError($sysParams["method"],$requestUrl,"HTTP_ERROR_" . $e->getCode(),$e->getMessage());
+			//$this->logCommunicationError($sysParams["method"],$requestUrl,"HTTP_ERROR_" . $e->getCode(),$e->getMessage());
 			$result->code = $e->getCode();
 			$result->msg = $e->getMessage();
 			return $result;
