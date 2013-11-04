@@ -3,12 +3,12 @@
  * TOP API: tmall.item.desc.modules.get request
  * 
  * @author auto create
- * @since 1.0, 2013-10-10 16:51:20
+ * @since 1.0, 2013-11-01 16:53:56
  */
 class TmallItemDescModulesGetRequest
 {
 	/** 
-	 * 叶子类目id
+	 * 淘宝后台发布商品的叶子类目id，可通过taobao.itemcats.get查到。api 访问地址http://api.taobao.com/apidoc/api.htm?spm=0.0.0.0.CFhhk4&path=cid:3-apiId:122
 	 **/
 	private $catId;
 	

@@ -20,7 +20,7 @@ class TopClient
 
 	protected $apiVersion = "2.0";
 
-	protected $sdkVersion = "top-sdk-php-20131010";
+	protected $sdkVersion = "top-sdk-php-20131101";
 
 	protected function generateSign($params)
 	{

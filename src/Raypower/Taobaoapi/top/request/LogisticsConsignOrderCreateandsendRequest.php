@@ -3,7 +3,7 @@
  * TOP API: taobao.logistics.consign.order.createandsend request
  * 
  * @author auto create
- * @since 1.0, 2013-10-10 16:51:20
+ * @since 1.0, 2013-11-01 16:53:56
  */
 class LogisticsConsignOrderCreateandsendRequest
 {
@@ -18,7 +18,7 @@ class LogisticsConsignOrderCreateandsendRequest
 	private $itemJsonString;
 	
 	/** 
-	 * 物流订单物流类型，值固定选择：30
+	 * 物流订单物流类型，值固定选择：2
 	 **/
 	private $logisType;
 	
@@ -33,7 +33,7 @@ class LogisticsConsignOrderCreateandsendRequest
 	private $orderSource;
 	
 	/** 
-	 * 订单类型，值固定选择：2
+	 * 订单类型，值固定选择：30
 	 **/
 	private $orderType;
 	

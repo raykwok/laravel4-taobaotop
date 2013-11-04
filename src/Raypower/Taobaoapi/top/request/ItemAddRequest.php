@@ -3,7 +3,7 @@
  * TOP API: taobao.item.add request
  * 
  * @author auto create
- * @since 1.0, 2013-10-10 16:51:20
+ * @since 1.0, 2013-11-01 16:53:56
  */
 class ItemAddRequest
 {
@@ -65,7 +65,7 @@ fee_card(话费软件代充)
 	private $desc;
 	
 	/** 
-	 * 商品描述模块化，模块列表，由List<ItemDescModule>转化成jsonArray存入，后端逻辑验证通过，拼装成模块内容+锚点导航后存入desc中。数据结构具体参见Item_Desc_Module
+	 * 商品描述模块化，模块列表，具体数据结构参见Item_Desc_Module。详细的使用方法可参考下面FAQ中说明。
 	 **/
 	private $descModules;
 	

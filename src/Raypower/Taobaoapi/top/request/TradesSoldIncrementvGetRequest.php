@@ -3,7 +3,7 @@
  * TOP API: taobao.trades.sold.incrementv.get request
  * 
  * @author auto create
- * @since 1.0, 2013-10-10 16:51:20
+ * @since 1.0, 2013-11-01 16:53:56
  */
 class TradesSoldIncrementvGetRequest
 {
@@ -77,10 +77,9 @@ super_market_trade(商超交易),
 super_market_cod_trade(商超货到付款交易)
 taohua(桃花网交易类型）
 waimai(外卖交易类型）
-nopaid（即时到帐/趣味猜交易类型）
+nopaid（无付款订单）
 eticket(电子凭证)
 tmall_i18n（天猫国际）
-nopaid（试用中心）。
 注：guarantee_trade是一个组合查询条件，并不是一种交易类型，获取批量或单个订单中不会返回此种类型的订单。
 	 **/
 	private $type;

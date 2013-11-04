@@ -3,7 +3,7 @@
  * TOP API: taobao.item.update request
  * 
  * @author auto create
- * @since 1.0, 2013-10-10 16:51:20
+ * @since 1.0, 2013-11-01 16:53:56
  */
 class ItemUpdateRequest
 {
@@ -51,7 +51,7 @@ fee_card(话费软件代充)
 	private $desc;
 	
 	/** 
-	 * 商品描述模块化，模块列表，由List<ItemDescModule>转化成jsonArray存入，后端逻辑验证通过，拼装成模块内容+锚点导航后存入desc中。数据结构具体参见Item_Desc_Module 。具体模版可通过tmall.item.desc.modules.get 获得
+	 * 商品描述模块化，模块列表；数据结构可参考Item_Desc_Module 。详细使用说明：http://open.taobao.com/support/question_detail.htm?spm=0.0.0.0.cRcj3S&id=147498 ；
 	 **/
 	private $descModules;
 	

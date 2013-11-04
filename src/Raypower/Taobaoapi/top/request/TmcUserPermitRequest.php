@@ -3,12 +3,12 @@
  * TOP API: taobao.tmc.user.permit request
  * 
  * @author auto create
- * @since 1.0, 2013-10-10 16:51:20
+ * @since 1.0, 2013-11-01 16:53:56
  */
 class TmcUserPermitRequest
 {
 	/** 
-	 * 消息主题列表，用半角逗号分隔。当用户订阅的topic是应用订阅的子集时才需要设置，一般情况建议不要设置。
+	 * 消息主题列表，用半角逗号分隔。当用户订阅的topic是应用订阅的子集时才需要设置，不设置表示继承应用所订阅的所有topic，一般情况建议不要设置。
 	 **/
 	private $topics;
 	

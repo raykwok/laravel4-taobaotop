@@ -3,7 +3,7 @@
  * TOP API: taobao.items.inventory.get request
  * 
  * @author auto create
- * @since 1.0, 2013-10-10 16:51:20
+ * @since 1.0, 2013-11-01 16:53:56
  */
 class ItemsInventoryGetRequest
 {
@@ -16,7 +16,7 @@ for_shelved(等待所有上架)<br>
 
 sold_out(全部卖完)<br>
 violation_off_shelf(违规下架的)<br>
-默认查询的是for_shelved(等待所有上架)这个状态的商品<br>
+默认查询for_shelved(等待所有上架)这个状态的商品<br>
 <font color='red'>注：for_shelved(等待所有上架)=regular_shelved(定时上架)+never_on_shelf(从未上架)+off_shelf(我下架的)</font>
 	 **/
 	private $banner;
@@ -32,13 +32,8 @@ violation_off_shelf(违规下架的)<br>
 	private $endModified;
 	
 	/** 
-	 * 需返回的字段列表。可选值：Item商品结构体中的以下字段： 
-approve_status,num_iid,title,nick,type,cid,pic_url,num,props,valid_thru, 
-
-list_time,price,has_discount,has_invoice,has_warranty,has_showcase, 
-
-modified,delist_time,postage_id,seller_cids,outer_id；字段之间用“,”分隔。 
-
+	 * 需返回的字段列表。可选值为 Item 商品结构体中的以下字段： 
+approve_status,num_iid,title,nick,type,cid,pic_url,num,props,valid_thru, list_time,price,has_discount,has_invoice,has_warranty,has_showcase, modified,delist_time,postage_id,seller_cids,outer_id；字段之间用“,”分隔。<br> 
 不支持其他字段，如果需要获取其他字段数据，调用taobao.item.get。
 	 **/
 	private $fields;

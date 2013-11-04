@@ -3,7 +3,7 @@
  * TOP API: taobao.promotion.meal.get request
  * 
  * @author auto create
- * @since 1.0, 2013-10-10 16:51:20
+ * @since 1.0, 2013-11-01 16:53:56
  */
 class PromotionMealGetRequest
 {
