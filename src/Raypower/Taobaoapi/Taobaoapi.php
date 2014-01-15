@@ -2,6 +2,7 @@
 
 
 namespace Raypower\Taobaoapi;
+
 use TopClient;
 use stdClass;
 use Config;
@@ -127,5 +128,31 @@ class Taobaoapi extends TopClient
             $this->logCommunicationError($sysParams["method"], $requestUrl, "API_RESPONSE_ERROR", $resp);
         }
         return $respObject;
+    }
+
+    /**
+     * 设置appkey
+     * @param string $value
+     */
+    /**
+     * 设置appkey
+     * @param string $value
+     * @return $this
+     */
+    public function setAppkey($value)
+    {
+        $this->appkey = $value;
+        return $this;
+    }
+
+    /**
+     * 设置secretKey
+     * @param string $value
+     * @return $this
+     */
+    public function setSecretKey($value)
+    {
+        $this->secretKey = $value;
+        return $this;
     }
 }
