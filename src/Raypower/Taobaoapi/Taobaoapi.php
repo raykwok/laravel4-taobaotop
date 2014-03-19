@@ -9,6 +9,11 @@ use Config;
 
 class Taobaoapi extends TopClient
 {
+    /**
+     * @var string sitekey for uzhan
+     */
+    protected $uSiteKey;
+
     public function __construct()
     {
         //api response data format api响应数据格式
@@ -23,15 +28,8 @@ class Taobaoapi extends TopClient
         if (Config::get('taobaoapi::connectTimeout'))
             $this->connectTimeout = Config::get('taobaoapi::connectTimeout');
 
-        //appkey
-        $appkeys = Config::get('taobaoapi::appkeys');
-        $randKey = array_rand($appkeys, 1);
-        $randAppkeyStr = $appkeys[$randKey];
-        $randAppkey = explode(',', $randAppkeyStr);
-        if (isset($randAppkey[0]) && isset($randAppkey[1])) {
-            $this->appkey = $randAppkey[0];
-            $this->secretKey = $randAppkey[1];
-        }
+        //set rand appkey
+        $this->setRandAppkey();
     }
 
     /**
@@ -153,6 +151,65 @@ class Taobaoapi extends TopClient
     public function setSecretKey($value)
     {
         $this->secretKey = $value;
+        return $this;
+    }
+
+    /**
+     * get siteKey
+     * @return mixed
+     */
+    public function getUSiteKey()
+    {
+        return $this->uSiteKey;
+    }
+
+    /**
+     * Set rand appkey
+     * @return $this
+     */
+    public function setRandAppkey()
+    {
+        $appkeys = Config::get('taobaoapi::appkeys');
+        $randKey = array_rand($appkeys, 1);
+        $randAppkeyStr = $appkeys[$randKey];
+        $randAppkey = explode(',', $randAppkeyStr);
+        if (isset($randAppkey[0]) && isset($randAppkey[1])) {
+            $this->appkey = $randAppkey[0];
+            $this->secretKey = $randAppkey[1];
+            if (isset($randAppkey[2])) {
+                $this->uSiteKey = $randAppkey[2];
+            }
+        }
+
+        return $this;
+    }
+
+
+    /**
+     * Set rand appkeys by group
+     * @param $group
+     * @return $this
+     * @throws \Exception
+     */
+    public function setRandAppkeyByGroup($group)
+    {
+        $groupAppkeys = Config::get('taobaoapi::groupAppkeys');
+        if (!isset($groupAppkeys[$group])) {
+            throw new \Exception('No available groups!');
+        }
+
+        $appkeys = $groupAppkeys[$group];
+        $randKey = array_rand($appkeys, 1);
+        $randAppkeyStr = $appkeys[$randKey];
+        $randAppkey = explode(',', $randAppkeyStr);
+        if (isset($randAppkey[0]) && isset($randAppkey[1])) {
+            $this->appkey = $randAppkey[0];
+            $this->secretKey = $randAppkey[1];
+            if (isset($randAppkey[2])) {
+                $this->uSiteKey = $randAppkey[2];
+            }
+        }
+
         return $this;
     }
 }

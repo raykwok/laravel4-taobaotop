@@ -20,17 +20,29 @@ return array(
 
     /**
      * appkeys
-     * format: appkey,secretKey
+     * format: appkey,secretKey[,uSiteKey]
      * 格式: appkey,secretKey
      *
      * Example:
      * 'appkeys' => array(
-     *     '21100000,13c51ce419497a6b4c2a82a03f7b4ca5',
-     *     '21187480,9eca0febb018b3aeb7245e691f03b15c',
+     *     '21100000,13c51ce419497a6b4c2a82a03f7b4ca5,c51ce419497a6b4c2a82a03f7b4ca5',
+     *     '21187480,9eca0febb018b3aeb7245e691f03b15c,eca0febb018b3aeb7245e691f03b15c',
      *  ),
      */
     'appkeys' => array(
-        '12515302,13c51ce419497a6b4c2a82a03f7b4ca5',
-        '21195780,9eca0febb018b3aeb7245e691f03b15c',
+        'appkey,secretKey[,uSiteKey]',
+    ),
+
+    /**
+     * uzhan appkeys
+     * format: appkey,secretKey,siteKey
+     */
+    'groupAppkeys' => array(
+        'groupA' => array(
+            'appkey,secretKey[,uSiteKey]'
+        ),
+        'groupA' => array(
+            'appkey,secretKey[,uSiteKey]'
+        ),
     ),
 );
