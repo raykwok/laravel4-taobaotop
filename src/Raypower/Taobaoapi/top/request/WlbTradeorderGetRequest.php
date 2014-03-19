@@ -3,10 +3,15 @@
  * TOP API: taobao.wlb.tradeorder.get request
  * 
  * @author auto create
- * @since 1.0, 2013-11-01 16:53:56
+ * @since 1.0, 2014-03-19 17:12:54
  */
 class WlbTradeorderGetRequest
 {
+	/** 
+	 * 子交易号
+	 **/
+	private $subTradeId;
+	
 	/** 
 	 * 指定交易类型的交易号
 	 **/
@@ -15,13 +20,23 @@ class WlbTradeorderGetRequest
 	/** 
 	 * 交易类型:
 TAOBAO--淘宝交易
-PAIPAI--拍拍交易
-YOUA--有啊交易
+OTHER_TRADE--其它交易
 	 **/
 	private $tradeType;
 	
 	private $apiParas = array();
 	
+	public function setSubTradeId($subTradeId)
+	{
+		$this->subTradeId = $subTradeId;
+		$this->apiParas["sub_trade_id"] = $subTradeId;
+	}
+
+	public function getSubTradeId()
+	{
+		return $this->subTradeId;
+	}
+
 	public function setTradeId($tradeId)
 	{
 		$this->tradeId = $tradeId;

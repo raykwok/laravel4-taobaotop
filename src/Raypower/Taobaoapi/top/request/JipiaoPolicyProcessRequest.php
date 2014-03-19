@@ -3,12 +3,12 @@
  * TOP API: taobao.jipiao.policy.process request
  * 
  * @author auto create
- * @since 1.0, 2013-11-01 16:53:56
+ * @since 1.0, 2014-03-19 17:12:54
  */
 class JipiaoPolicyProcessRequest
 {
 	/** 
-	 * 政策所支持的航空公司二字码
+	 * 政策所支持的航空公司二字码<br /> 支持最大长度为：2<br /> 支持的最大列表长度为：2
 	 **/
 	private $airline;
 	
@@ -16,7 +16,7 @@ class JipiaoPolicyProcessRequest
 	 * 政策支持的到达机场列表，逗号分隔的机场三字码，
 注： 
 1.让利(8)政策，当到达支持多个(最多25)时，出发只能支持一个； 
-2.特价(6)/特殊(10)政策，出发/到达城市只支持一个
+2.特价(6)/特殊(10)政策，出发/到达城市只支持一个<br /> 支持最大长度为：100<br /> 支持的最大列表长度为：100
 	 **/
 	private $arrAirports;
 	
@@ -25,7 +25,7 @@ class JipiaoPolicyProcessRequest
     "rfc" 对应值 1:不退不改不签,2:收费退改签（退、改、签中任意一个收费即为收费退改签）3:免费退改签
     "ipt" 对应值 1:等额行程单 2:不提供发票5:等额“行程单+发票”（对应旧的2） 6:等额发票（对应旧的1）,例如：rfc=1;ipt=1
     "fdtod"对应值起飞时间“0000”为0时0分 
-    "ldtod"对应值：到达时间“2359”为23时59分
+    "ldtod"对应值：到达时间“2359”为23时59分<br /> 支持最大长度为：300<br /> 支持的最大列表长度为：300
 	 **/
 	private $attributes;
 	
@@ -52,19 +52,19 @@ class JipiaoPolicyProcessRequest
 @3: [{"matcher":{"mode":"ALL","list":["D"]},"priceStrategy":{"mode":"Y_DISCOUNT","modeBaseValue":75,"retention":500,"rebase":-5}}]
 
 规则说明： cabin_rules分二个字段：matcher:适应舱位（又包含两个字段：mode：匹配模式枚举(填INCLUDE），list：适应舱位列表），priceStrategy:价格策略（mode:价格模式（让利产品：DISCOUNT，特价特殊产品有四种模式：票面价用TICKET_PRICE，Y舱折扣用Y_DISCOUNT，C舱折扣用C_DISCOUNT，F舱折扣用F_DISCOUNT）；modeBaseValue:当价格模式mode为DISCOUNT，modeBaseValue不填；当价格模式mode为TICKET_PRICE，modeBaseValue填票面价；当价格模式mode为Y_DISCOUNT/C_DISCOUNT/F_DISCOUNT，modeBaseValue填对应的折扣；retention为返点的百分比；rebase为留钱）
-注意：特殊政策不需要舱位时需要传入22；retention、rebase传入小数时，会取整数部分
+注意：特殊政策不需要舱位时需要传入22；retention、rebase传入小数时，会取整数部分<br /> 支持最大长度为：300<br /> 支持的最大列表长度为：300
 	 **/
 	private $cabinRules;
 	
 	/** 
-	 * 改签规则
+	 * 改签规则<br /> 支持最大长度为：300<br /> 支持的最大列表长度为：300
 	 **/
 	private $changeRule;
 	
 	/** 
 	 * 政策适用的星期几，1-7分别表示周一到周日
 注：特殊政策不能填写该字段；其它政策填写时，
-包含全部时需要设置为1234567
+包含全部时需要设置为1234567<br /> 支持最大长度为：7<br /> 支持的最大列表长度为：7
 	 **/
 	private $dayOfWeeks;
 	
@@ -72,18 +72,18 @@ class JipiaoPolicyProcessRequest
 	 * 政策支持的出发机场列表，逗号分隔的机场三字码，
 注：
 1.让利(8)政策，当出发支持多个(最多25)时，到达只能支持一个；
-2.特价(6)/特殊(10)政策，出发/到达城市只支持一个
+2.特价(6)/特殊(10)政策，出发/到达城市只支持一个<br /> 支持最大长度为：100<br /> 支持的最大列表长度为：100
 	 **/
 	private $depAirports;
 	
 	/** 
-	 * ei项，自动HK，自动出票设定时必需
+	 * ei项，自动HK，自动出票设定时必需<br /> 支持最大长度为：20<br /> 支持的最大列表长度为：20
 	 **/
 	private $ei;
 	
 	/** 
 	 * 政策旅行有效日期中排除指定日期，设定日期将不在搜索结果页面展现
-注：最多排除20天，特殊政策无此设置
+注：最多排除20天，特殊政策无此设置<br /> 支持最大长度为：200<br /> 支持的最大列表长度为：200
 	 **/
 	private $excludeDate;
 	
@@ -96,7 +96,7 @@ class JipiaoPolicyProcessRequest
 	 * flags是二进制标志
 从右到左数，第1个位表示：不PAT自动HK 
 第2个位表示：儿童可与成人同价
-比如：“儿童可与成人同价”=true ,“不PAT自动HK”=false,则表示成二进制字符串"10",换算成十进制flags=2
+比如：“儿童可与成人同价”=true ,“不PAT自动HK”=false,则表示成二进制字符串"10",换算成十进制flags=2<br /> 支持最大值为：9223372036854775807<br /> 支持最小值为：0<br /> 支持的最大列表长度为：64
 	 **/
 	private $flags;
 	
@@ -105,7 +105,7 @@ class JipiaoPolicyProcessRequest
 +CA1234,CZ3166，表示包含列表
 -CA1234,CZ3166，表示排除列表
 默认包含所有航班；
-不支持同时包含和排除
+不支持同时包含和排除<br /> 支持最大长度为：1000<br /> 支持的最大列表长度为：1000
 	 **/
 	private $flightInfo;
 	
@@ -115,17 +115,17 @@ class JipiaoPolicyProcessRequest
 	private $lastSaleAdvanceDay;
 	
 	/** 
-	 * 代理商对政策的备注信息
+	 * 代理商对政策的备注信息<br /> 支持最大长度为：500<br /> 支持的最大列表长度为：500
 	 **/
 	private $memo;
 	
 	/** 
-	 * 政策设置为支持自动HK，自动出票时必需
+	 * 政策设置为支持自动HK，自动出票时必需<br /> 支持最大长度为：32<br /> 支持的最大列表长度为：32
 	 **/
 	private $officeId;
 	
 	/** 
-	 * 政策的外部id，用于关联代理商自身维护的政策id，提供外部产品id时，可以在查询和修改时作为唯一条件使用
+	 * 政策的外部id，用于关联代理商自身维护的政策id，提供外部产品id时，可以在查询和修改时作为唯一条件使用<br /> 支持最大长度为：64<br /> 支持的最大列表长度为：64
 	 **/
 	private $outProductId;
 	
@@ -142,12 +142,12 @@ class JipiaoPolicyProcessRequest
 	private $policyType;
 	
 	/** 
-	 * 退票规则
+	 * 退票规则<br /> 支持最大长度为：300<br /> 支持的最大列表长度为：300
 	 **/
 	private $refundRule;
 	
 	/** 
-	 * 签转规则
+	 * 签转规则<br /> 支持最大长度为：300<br /> 支持的最大列表长度为：300
 	 **/
 	private $reissueRule;
 	
@@ -162,7 +162,7 @@ class JipiaoPolicyProcessRequest
 	private $saleStartDate;
 	
 	/** 
-	 * 政策类型为10时，用于设置政策的每天的库存信息
+	 * 政策类型为10时，用于设置政策的每天的库存信息<br /> 支持最大长度为：1500<br /> 支持的最大列表长度为：1500
 	 **/
 	private $seatInfo;
 	
@@ -172,7 +172,7 @@ class JipiaoPolicyProcessRequest
 	private $shareSupport;
 	
 	/** 
-	 * 特殊说明,此字段不再使用,填写内容将会报相应的填写错误
+	 * 特殊说明,此字段不再使用,填写内容将会报相应的填写错误<br /> 支持最大长度为：300<br /> 支持的最大列表长度为：300
 	 **/
 	private $specialRule;
 	
@@ -189,7 +189,7 @@ class JipiaoPolicyProcessRequest
 	/** 
 	 * 0，表示添加政策；
 1，表示按id修改政策；
-2，表示按out_product_id修改政策
+2，表示按out_product_id修改政策<br /> 支持最大值为：2<br /> 支持最小值为：0
 	 **/
 	private $type;
 	

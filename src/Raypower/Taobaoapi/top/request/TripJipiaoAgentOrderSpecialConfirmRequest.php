@@ -3,7 +3,7 @@
  * TOP API: taobao.trip.jipiao.agent.order.special.confirm request
  * 
  * @author auto create
- * @since 1.0, 2013-11-01 16:53:56
+ * @since 1.0, 2014-03-19 17:12:54
  */
 class TripJipiaoAgentOrderSpecialConfirmRequest
 {
@@ -13,7 +13,7 @@ class TripJipiaoAgentOrderSpecialConfirmRequest
 	private $canPay;
 	
 	/** 
-	 * can_pay=false,fail_type=0时，必需提供失败原因
+	 * can_pay=false,fail_type=0时，必需提供失败原因<br /> 支持最大长度为：200<br /> 支持的最大列表长度为：200
 	 **/
 	private $failMemo;
 	

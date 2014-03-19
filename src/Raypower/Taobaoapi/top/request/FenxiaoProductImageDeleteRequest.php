@@ -3,7 +3,7 @@
  * TOP API: taobao.fenxiao.product.image.delete request
  * 
  * @author auto create
- * @since 1.0, 2013-11-01 16:53:56
+ * @since 1.0, 2014-03-19 17:12:54
  */
 class FenxiaoProductImageDeleteRequest
 {

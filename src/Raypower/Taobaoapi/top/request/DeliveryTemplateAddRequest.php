@@ -3,7 +3,7 @@
  * TOP API: taobao.delivery.template.add request
  * 
  * @author auto create
- * @since 1.0, 2013-11-01 16:53:56
+ * @since 1.0, 2014-03-19 17:12:54
  */
 class DeliveryTemplateAddRequest
 {
@@ -22,7 +22,7 @@ class DeliveryTemplateAddRequest
 	private $consignAreaId;
 	
 	/** 
-	 * 运费模板的名称，长度不能超过50个字节
+	 * 运费模板的名称，长度不能超过50个字节<br /> 支持最大长度为：50<br /> 支持的最大列表长度为：50
 	 **/
 	private $name;
 	

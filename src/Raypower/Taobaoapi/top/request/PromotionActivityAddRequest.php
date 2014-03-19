@@ -3,12 +3,12 @@
  * TOP API: taobao.promotion.activity.add request
  * 
  * @author auto create
- * @since 1.0, 2013-11-01 16:53:56
+ * @since 1.0, 2014-03-19 17:12:54
  */
 class PromotionActivityAddRequest
 {
 	/** 
-	 * 优惠券总领用数量
+	 * 优惠券总领用数量<br /> 支持最大值为：999999<br /> 支持最小值为：1
 	 **/
 	private $couponCount;
 	
@@ -18,14 +18,14 @@ class PromotionActivityAddRequest
 	private $couponId;
 	
 	/** 
-	 * 每个人最多领用数量，0代表不限
+	 * 每个人最多领用数量，0代表不限<br /> 支持最大值为：5<br /> 支持最小值为：0
 	 **/
 	private $personLimitCount;
 	
 	/** 
 	 * 是否将该活动优惠券同步到淘券市场
 1（不同步）
-2（同步）
+2（同步）<br /> 支持最大值为：2<br /> 支持最小值为：1
 	 **/
 	private $uploadToTaoquan;
 	

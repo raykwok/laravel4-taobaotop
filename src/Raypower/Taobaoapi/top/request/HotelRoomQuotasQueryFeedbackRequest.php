@@ -3,12 +3,12 @@
  * TOP API: taobao.hotel.room.quotas.query.feedback request
  * 
  * @author auto create
- * @since 1.0, 2013-11-01 16:53:56
+ * @since 1.0, 2014-03-19 17:12:54
  */
 class HotelRoomQuotasQueryFeedbackRequest
 {
 	/** 
-	 * 选中日期范围内的最大可用房量
+	 * 选中日期范围内的最大可用房量<br /> 支持最小值为：0
 	 **/
 	private $avaliableRoomCount;
 	
@@ -45,7 +45,7 @@ F:失败
 	private $roomQuotas;
 	
 	/** 
-	 * 订单总价。0～99999999的正整数。货币单位为人民币。
+	 * 订单总价。0～99999999的正整数。货币单位为人民币。<br /> 支持最大值为：99999999<br /> 支持最小值为：0
 	 **/
 	private $totalRoomPrice;
 	

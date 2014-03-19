@@ -3,12 +3,12 @@
  * TOP API: taobao.crm.group.add request
  * 
  * @author auto create
- * @since 1.0, 2013-11-01 16:53:56
+ * @since 1.0, 2014-03-19 17:12:54
  */
 class CrmGroupAddRequest
 {
 	/** 
-	 * 分组名称，每个卖家最多可以拥有100个分组
+	 * 分组名称，每个卖家最多可以拥有100个分组<br /> 支持最大长度为：15<br /> 支持的最大列表长度为：15
 	 **/
 	private $groupName;
 	

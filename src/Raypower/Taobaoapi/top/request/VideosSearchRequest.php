@@ -3,7 +3,7 @@
  * TOP API: taobao.videos.search request
  * 
  * @author auto create
- * @since 1.0, 2013-11-01 16:53:56
+ * @since 1.0, 2014-03-19 17:12:54
  */
 class VideosSearchRequest
 {
@@ -33,12 +33,12 @@ class VideosSearchRequest
 	private $states;
 	
 	/** 
-	 * 视频标签
+	 * 视频标签<br /> 支持最大长度为：256<br /> 支持的最大列表长度为：256
 	 **/
 	private $tag;
 	
 	/** 
-	 * 视频标题
+	 * 视频标题<br /> 支持最大长度为：256<br /> 支持的最大列表长度为：256
 	 **/
 	private $title;
 	

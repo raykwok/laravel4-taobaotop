@@ -3,7 +3,7 @@
  * TOP API: taobao.simba.adgroup.catmatch.update request
  * 
  * @author auto create
- * @since 1.0, 2013-11-01 16:53:56
+ * @since 1.0, 2014-03-19 17:12:54
  */
 class SimbaAdgroupCatmatchUpdateRequest
 {
@@ -18,7 +18,7 @@ class SimbaAdgroupCatmatchUpdateRequest
 	private $catmatchId;
 	
 	/** 
-	 * 类目出价，单位为分，不能小于5。如果use_default_price字段为使用默认出价，则此max_price字段所传入的值不起作用。商品将会使用默认出价。
+	 * 类目出价，单位为分，不能小于5。如果use_default_price字段为使用默认出价，则此max_price字段所传入的值不起作用。商品将会使用默认出价。<br /> 支持最小值为：5
 	 **/
 	private $maxPrice;
 	

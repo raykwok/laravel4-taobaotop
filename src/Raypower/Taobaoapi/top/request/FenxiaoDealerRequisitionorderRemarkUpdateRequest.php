@@ -3,7 +3,7 @@
  * TOP API: taobao.fenxiao.dealer.requisitionorder.remark.update request
  * 
  * @author auto create
- * @since 1.0, 2013-11-01 16:53:56
+ * @since 1.0, 2014-03-19 17:12:54
  */
 class FenxiaoDealerRequisitionorderRemarkUpdateRequest
 {
@@ -25,7 +25,7 @@ class FenxiaoDealerRequisitionorderRemarkUpdateRequest
 2:黄色
 3:绿色
 4:蓝色
-5:粉红色
+5:粉红色<br /> 支持最大值为：5<br /> 支持最小值为：1
 	 **/
 	private $supplierMemoFlag;
 	

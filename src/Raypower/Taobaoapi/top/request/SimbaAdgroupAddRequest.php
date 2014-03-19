@@ -3,7 +3,7 @@
  * TOP API: taobao.simba.adgroup.add request
  * 
  * @author auto create
- * @since 1.0, 2013-11-01 16:53:56
+ * @since 1.0, 2014-03-19 17:12:54
  */
 class SimbaAdgroupAddRequest
 {
@@ -13,7 +13,7 @@ class SimbaAdgroupAddRequest
 	private $campaignId;
 	
 	/** 
-	 * 推广组默认出价，单位为分，不能小于5 不能大于日最高限额
+	 * 推广组默认出价，单位为分，不能小于5 不能大于日最高限额<br /> 支持最小值为：5
 	 **/
 	private $defaultPrice;
 	
@@ -33,7 +33,7 @@ class SimbaAdgroupAddRequest
 	private $nick;
 	
 	/** 
-	 * 创意标题，最多20个汉字
+	 * 创意标题，最多20个汉字<br /> 支持最大长度为：40<br /> 支持的最大列表长度为：40
 	 **/
 	private $title;
 	

@@ -3,12 +3,12 @@
  * TOP API: alipay.ebpp.bill.payurl.get request
  * 
  * @author auto create
- * @since 1.0, 2013-11-01 16:53:56
+ * @since 1.0, 2014-03-19 17:12:54
  */
 class AlipayEbppBillPayurlGetRequest
 {
 	/** 
-	 * 支付宝的业务订单号，具有唯一性。
+	 * 支付宝的业务订单号，具有唯一性。<br /> 支持最大长度为：28<br /> 支持的最大列表长度为：28
 	 **/
 	private $alipayOrderNo;
 	
@@ -18,12 +18,12 @@ class AlipayEbppBillPayurlGetRequest
 	private $authToken;
 	
 	/** 
-	 * 输出机构的业务流水号，需要保证唯一性。
+	 * 输出机构的业务流水号，需要保证唯一性。<br /> 支持最大长度为：32<br /> 支持的最大列表长度为：32
 	 **/
 	private $merchantOrderNo;
 	
 	/** 
-	 * 支付宝订单类型。公共事业缴纳JF,信用卡还款HK。
+	 * 支付宝订单类型。公共事业缴纳JF,信用卡还款HK。<br /> 支持最大长度为：10<br /> 支持的最大列表长度为：10
 	 **/
 	private $orderType;
 	

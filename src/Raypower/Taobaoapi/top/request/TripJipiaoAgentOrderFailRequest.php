@@ -3,12 +3,12 @@
  * TOP API: taobao.trip.jipiao.agent.order.fail request
  * 
  * @author auto create
- * @since 1.0, 2013-11-01 16:53:56
+ * @since 1.0, 2014-03-19 17:12:54
  */
 class TripJipiaoAgentOrderFailRequest
 {
 	/** 
-	 * 失败类型为0，说明备注原因
+	 * 失败类型为0，说明备注原因<br /> 支持最大长度为：200<br /> 支持的最大列表长度为：200
 	 **/
 	private $failMemo;
 	

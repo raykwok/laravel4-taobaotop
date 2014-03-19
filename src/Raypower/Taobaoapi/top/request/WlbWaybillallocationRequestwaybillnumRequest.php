@@ -3,7 +3,7 @@
  * TOP API: taobao.wlb.waybillallocation.requestwaybillnum request
  * 
  * @author auto create
- * @since 1.0, 2013-11-01 16:53:56
+ * @since 1.0, 2014-03-19 17:12:54
  */
 class WlbWaybillallocationRequestwaybillnumRequest
 {
@@ -28,7 +28,7 @@ class WlbWaybillallocationRequestwaybillnumRequest
 	private $serviceCode;
 	
 	/** 
-	 * 用户ID
+	 * 用户ID<br /> 支持的最大列表长度为：19
 	 **/
 	private $userId;
 	

@@ -3,7 +3,7 @@
  * TOP API: taobao.promotion.coupon.add request
  * 
  * @author auto create
- * @since 1.0, 2013-11-01 16:53:56
+ * @since 1.0, 2014-03-19 17:12:54
  */
 class PromotionCouponAddRequest
 {
@@ -13,7 +13,7 @@ class PromotionCouponAddRequest
 	private $condition;
 	
 	/** 
-	 * 优惠券的面额，必须是3，5，10，20，50，100
+	 * 优惠券的面额，必须是3，5，10，20，50，100<br /> 支持最大值为：100<br /> 支持最小值为：3
 	 **/
 	private $denominations;
 	

@@ -3,7 +3,7 @@
  * TOP API: taobao.logistics.consign.resend request
  * 
  * @author auto create
- * @since 1.0, 2013-11-01 16:53:56
+ * @since 1.0, 2014-03-19 17:12:54
  */
 class LogisticsConsignResendRequest
 {
@@ -51,7 +51,7 @@ TIDA对应了A宝贝，冒号后用逗号分隔的"12345","67890".说明本订�
 	private $subTid;
 	
 	/** 
-	 * 淘宝交易ID
+	 * 淘宝交易ID<br /> 支持最小值为：1000
 	 **/
 	private $tid;
 	

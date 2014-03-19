@@ -3,27 +3,27 @@
  * TOP API: taobao.video.update request
  * 
  * @author auto create
- * @since 1.0, 2013-11-01 16:53:56
+ * @since 1.0, 2014-03-19 17:12:54
  */
 class VideoUpdateRequest
 {
 	/** 
-	 * 视频封面url,不能超过512个英文字母
+	 * 视频封面url,不能超过512个英文字母<br /> 支持最大长度为：512<br /> 支持的最大列表长度为：512
 	 **/
 	private $coverUrl;
 	
 	/** 
-	 * 视频描述信息，不能超过256个汉字
+	 * 视频描述信息，不能超过256个汉字<br /> 支持最大长度为：512<br /> 支持的最大列表长度为：512
 	 **/
 	private $description;
 	
 	/** 
-	 * 视频标签，以','隔开，且总长度不超过128个汉字
+	 * 视频标签，以','隔开，且总长度不超过128个汉字<br /> 支持最大长度为：256<br /> 支持的最大列表长度为：256
 	 **/
 	private $tags;
 	
 	/** 
-	 * 视频标题，不超过128个汉字。title, tags,cover_url和description至少必须传一个
+	 * 视频标题，不超过128个汉字。title, tags,cover_url和description至少必须传一个<br /> 支持最大长度为：256<br /> 支持的最大列表长度为：256
 	 **/
 	private $title;
 	

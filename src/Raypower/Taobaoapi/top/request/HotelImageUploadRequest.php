@@ -3,17 +3,17 @@
  * TOP API: taobao.hotel.image.upload request
  * 
  * @author auto create
- * @since 1.0, 2013-11-01 16:53:56
+ * @since 1.0, 2014-03-19 17:12:54
  */
 class HotelImageUploadRequest
 {
 	/** 
-	 * 酒店id
+	 * 酒店id<br /> 支持的最大列表长度为：20
 	 **/
 	private $hid;
 	
 	/** 
-	 * 上传的图片
+	 * 上传的图片<br /> 支持的文件类型为：jpg,png,gif<br /> 支持的最大列表长度为：512000
 	 **/
 	private $pic;
 	

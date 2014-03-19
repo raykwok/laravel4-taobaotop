@@ -3,7 +3,7 @@
  * TOP API: taobao.logistics.orderstore.push request
  * 
  * @author auto create
- * @since 1.0, 2013-11-01 16:53:56
+ * @since 1.0, 2014-03-19 17:12:54
  */
 class LogisticsOrderstorePushRequest
 {
@@ -18,17 +18,17 @@ class LogisticsOrderstorePushRequest
 	private $occureTime;
 	
 	/** 
-	 * 仓内操作描述
+	 * 仓内操作描述<br /> 支持最大长度为：200<br /> 支持的最大列表长度为：200
 	 **/
 	private $operateDetail;
 	
 	/** 
-	 * 快递业务员联系方式
+	 * 快递业务员联系方式<br /> 支持最大长度为：20<br /> 支持的最大列表长度为：20
 	 **/
 	private $operatorContact;
 	
 	/** 
-	 * 快递业务员名称
+	 * 快递业务员名称<br /> 支持最大长度为：20<br /> 支持的最大列表长度为：20
 	 **/
 	private $operatorName;
 	

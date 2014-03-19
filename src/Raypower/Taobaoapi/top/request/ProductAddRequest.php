@@ -3,14 +3,14 @@
  * TOP API: taobao.product.add request
  * 
  * @author auto create
- * @since 1.0, 2013-11-01 16:53:56
+ * @since 1.0, 2014-03-19 17:12:54
  */
 class ProductAddRequest
 {
 	/** 
 	 * 非关键属性结构:pid:vid;pid:vid.<br>
 非关键属性<font color=red>不包含</font>关键属性、销售属性、用户自定义属性、商品属性;
-<br>调用taobao.itemprops.get获取pid,调用taobao.itempropvalues.get获取vid.<br><font color=red>注:支持最大长度为512字节</font>
+<br>调用taobao.itemprops.get获取pid,调用taobao.itempropvalues.get获取vid.<br><font color=red>注:支持最大长度为512字节</font><br /> 支持最大长度为：512<br /> 支持的最大列表长度为：512
 	 **/
 	private $binds;
 	
@@ -31,12 +31,12 @@ class ProductAddRequest
 	private $desc;
 	
 	/** 
-	 * 存放产品扩展信息，由List(ProductExtraInfo)转化成jsonArray存入.
+	 * 存放产品扩展信息，由List(ProductExtraInfo)转化成jsonArray存入.<br /> 支持最大长度为：25000<br /> 支持的最大列表长度为：25000
 	 **/
 	private $extraInfo;
 	
 	/** 
-	 * 产品主图片.最大1M,目前仅支持GIF,JPG.
+	 * 产品主图片.最大1M,目前仅支持GIF,JPG.<br /> 支持的文件类型为：gif,jpg,png,jpeg<br /> 支持的最大列表长度为：1048576
 	 **/
 	private $image;
 	

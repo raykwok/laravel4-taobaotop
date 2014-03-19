@@ -3,12 +3,12 @@
  * TOP API: taobao.promotionmisc.mjs.activity.delete request
  * 
  * @author auto create
- * @since 1.0, 2013-11-01 16:53:56
+ * @since 1.0, 2014-03-19 17:12:54
  */
 class PromotionmiscMjsActivityDeleteRequest
 {
 	/** 
-	 * 活动id。
+	 * 活动id。<br /> 支持最小值为：0
 	 **/
 	private $activityId;
 	

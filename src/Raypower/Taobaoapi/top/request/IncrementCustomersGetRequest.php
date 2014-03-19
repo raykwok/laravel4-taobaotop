@@ -3,7 +3,7 @@
  * TOP API: taobao.increment.customers.get request
  * 
  * @author auto create
- * @since 1.0, 2013-11-01 16:53:56
+ * @since 1.0, 2014-03-19 17:12:54
  */
 class IncrementCustomersGetRequest
 {
@@ -18,12 +18,12 @@ class IncrementCustomersGetRequest
 	private $nicks;
 	
 	/** 
-	 * 分页查询时，查询的页码。此参数只有nicks为空时起作用。
+	 * 分页查询时，查询的页码。此参数只有nicks为空时起作用。<br /> 支持最小值为：0
 	 **/
 	private $pageNo;
 	
 	/** 
-	 * 分布查询时，页的大小。此参数只有当nicks为空时起作用。
+	 * 分布查询时，页的大小。此参数只有当nicks为空时起作用。<br /> 支持最大值为：200<br /> 支持最小值为：0
 	 **/
 	private $pageSize;
 	

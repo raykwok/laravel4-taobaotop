@@ -3,7 +3,7 @@
  * TOP API: taobao.fenxiao.cooperation.terminate request
  * 
  * @author auto create
- * @since 1.0, 2013-11-01 16:53:56
+ * @since 1.0, 2014-03-19 17:12:54
  */
 class FenxiaoCooperationTerminateRequest
 {
@@ -18,7 +18,7 @@ class FenxiaoCooperationTerminateRequest
 	private $endRemainDays;
 	
 	/** 
-	 * 终止说明（5-2000字）
+	 * 终止说明（5-2000字）<br /> 支持最大长度为：2000<br /> 支持的最大列表长度为：2000
 	 **/
 	private $endRemark;
 	

@@ -3,12 +3,12 @@
  * TOP API: taobao.sellercenter.roles.get request
  * 
  * @author auto create
- * @since 1.0, 2013-11-01 16:53:56
+ * @since 1.0, 2014-03-19 17:12:54
  */
 class SellercenterRolesGetRequest
 {
 	/** 
-	 * 卖家昵称(只允许查询自己的信息：当前登陆者)
+	 * 卖家昵称(只允许查询自己的信息：当前登陆者)<br /> 支持最大长度为：500<br /> 支持的最大列表长度为：500
 	 **/
 	private $nick;
 	

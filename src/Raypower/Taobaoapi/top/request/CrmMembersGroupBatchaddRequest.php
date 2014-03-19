@@ -3,17 +3,17 @@
  * TOP API: taobao.crm.members.group.batchadd request
  * 
  * @author auto create
- * @since 1.0, 2013-11-01 16:53:56
+ * @since 1.0, 2014-03-19 17:12:54
  */
 class CrmMembersGroupBatchaddRequest
 {
 	/** 
-	 * 会员的id（一次最多传入10个）
+	 * 会员的id（一次最多传入10个）<br /> 支持最小值为：1
 	 **/
 	private $buyerIds;
 	
 	/** 
-	 * 分组id
+	 * 分组id<br /> 支持最小值为：1
 	 **/
 	private $groupIds;
 	

@@ -3,12 +3,12 @@
  * TOP API: taobao.trade.receivetime.delay request
  * 
  * @author auto create
- * @since 1.0, 2013-11-01 16:53:56
+ * @since 1.0, 2014-03-19 17:12:54
  */
 class TradeReceivetimeDelayRequest
 {
 	/** 
-	 * 延长收货的天数，可选值为：3, 5, 7, 10。
+	 * 延长收货的天数，可选值为：3, 5, 7, 10。<br /> 支持最大值为：10<br /> 支持最小值为：3
 	 **/
 	private $days;
 	

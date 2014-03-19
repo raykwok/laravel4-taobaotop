@@ -3,7 +3,7 @@
  * TOP API: taobao.item.sku.get request
  * 
  * @author auto create
- * @since 1.0, 2013-11-01 16:53:56
+ * @since 1.0, 2014-03-19 17:12:54
  */
 class ItemSkuGetRequest
 {
@@ -18,7 +18,7 @@ class ItemSkuGetRequest
 	private $nick;
 	
 	/** 
-	 * 商品的数字IID（num_iid和nick必传一个，推荐用num_iid），传商品的数字id返回的结果里包含cspu（SKu上的产品规格信息）。
+	 * 商品的数字IID（num_iid和nick必传一个，推荐用num_iid），传商品的数字id返回的结果里包含cspu（SKu上的产品规格信息）。<br /> 支持最小值为：0
 	 **/
 	private $numIid;
 	

@@ -3,17 +3,17 @@
  * TOP API: tmall.eai.order.refund.message.get request
  * 
  * @author auto create
- * @since 1.0, 2013-11-01 16:53:56
+ * @since 1.0, 2014-03-19 17:12:54
  */
 class TmallEaiOrderRefundMessageGetRequest
 {
 	/** 
-	 * 页码。取值范围:大于零的整数; 默认值:1
+	 * 页码。取值范围:大于零的整数; 默认值:1<br /> 支持最小值为：1
 	 **/
 	private $pageNo;
 	
 	/** 
-	 * 每页条数。取值范围:大于零的整数; 默认值:40;最大值:40
+	 * 每页条数。取值范围:大于零的整数; 默认值:40;最大值:40<br /> 支持最大值为：40<br /> 支持最小值为：1
 	 **/
 	private $pageSize;
 	

@@ -3,7 +3,7 @@
  * TOP API: taobao.wlb.order.create request
  * 
  * @author auto create
- * @since 1.0, 2013-11-01 16:53:56
+ * @since 1.0, 2014-03-19 17:12:54
  */
 class WlbOrderCreateRequest
 {
@@ -18,7 +18,7 @@ class WlbOrderCreateRequest
 	private $attributes;
 	
 	/** 
-	 * 买家呢称
+	 * 买家呢称<br /> 支持最大长度为：64<br /> 支持的最大列表长度为：64
 	 **/
 	private $buyerNick;
 	
@@ -81,7 +81,7 @@ class WlbOrderCreateRequest
 	private $orderType;
 	
 	/** 
-	 * 外部订单业务ID，该编号在isv中是唯一编号， 用来控制并发，去重用
+	 * 外部订单业务ID，该编号在isv中是唯一编号， 用来控制并发，去重用<br /> 支持最大长度为：128<br /> 支持的最大列表长度为：128
 	 **/
 	private $outBizCode;
 	
@@ -101,8 +101,8 @@ class WlbOrderCreateRequest
 	private $prevOrderCode;
 	
 	/** 
-	 * 发收方发货方信息必须传 手机和电话必选其一
-收货方信息
+	 * 收货方信息，必须传， 手机和电话必选其一。
+收货方信息：
 邮编^^^省^^^市^^^区^^^具体地址^^^收件方名称^^^手机^^^电话
 
 如果某一个字段的数据为空时，必须传NA
@@ -110,7 +110,7 @@ class WlbOrderCreateRequest
 	private $receiverInfo;
 	
 	/** 
-	 * 备注
+	 * 备注<br /> 支持最大长度为：4000<br /> 支持的最大列表长度为：4000
 	 **/
 	private $remark;
 	
@@ -135,7 +135,7 @@ class WlbOrderCreateRequest
 	private $scheduleType;
 	
 	/** 
-	 * 发货方信息，发收方发货方信息必须传 手机和电话必选其一
+	 * 发货方信息，发货方信息必须传， 手机和电话必选其一。 发货方信息：
 邮编^^^省^^^市^^^区^^^具体地址^^^收件方名称^^^手机^^^电话
 如果某一个字段的数据为空时，必须传NA
 	 **/
@@ -147,7 +147,7 @@ class WlbOrderCreateRequest
 	private $serviceFee;
 	
 	/** 
-	 * 仓库编码
+	 * 仓库编码<br /> 支持最大长度为：64<br /> 支持的最大列表长度为：64
 	 **/
 	private $storeCode;
 	
@@ -166,7 +166,7 @@ class WlbOrderCreateRequest
 	private $tmsOrderCode;
 	
 	/** 
-	 * 物流公司编码
+	 * 物流公司编码<br /> 支持最大长度为：64<br /> 支持的最大列表长度为：64
 	 **/
 	private $tmsServiceCode;
 	

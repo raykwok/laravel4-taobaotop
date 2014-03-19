@@ -3,7 +3,7 @@
  * TOP API: tmall.crm.equity.set request
  * 
  * @author auto create
- * @since 1.0, 2013-11-01 16:53:56
+ * @since 1.0, 2014-03-19 17:12:54
  */
 class TmallCrmEquitySetRequest
 {
@@ -13,7 +13,7 @@ class TmallCrmEquitySetRequest
 	private $excludeArea;
 	
 	/** 
-	 * 会员等级，用逗号分隔。买家会员级别0：店铺客户 1：普通会员 2 ：高级会员 3：VIP会员 4：至尊VIP
+	 * 会员等级，用逗号分隔。买家会员级别0：店铺客户 1：普通会员 2 ：高级会员 3：VIP会员 4：至尊VIP<br /> 支持最大值为：4<br /> 支持最小值为：1
 	 **/
 	private $grade;
 	

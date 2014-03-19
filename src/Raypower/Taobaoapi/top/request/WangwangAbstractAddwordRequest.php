@@ -3,7 +3,7 @@
  * TOP API: taobao.wangwang.abstract.addword request
  * 
  * @author auto create
- * @since 1.0, 2013-11-01 16:53:56
+ * @since 1.0, 2014-03-19 17:12:54
  */
 class WangwangAbstractAddwordRequest
 {
@@ -13,7 +13,7 @@ class WangwangAbstractAddwordRequest
 	private $charset;
 	
 	/** 
-	 * 关键词，长度大于0
+	 * 关键词，长度大于0<br /> 支持最大长度为：12<br /> 支持的最大列表长度为：12
 	 **/
 	private $word;
 	

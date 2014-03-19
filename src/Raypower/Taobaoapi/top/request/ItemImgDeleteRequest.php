@@ -3,7 +3,7 @@
  * TOP API: taobao.item.img.delete request
  * 
  * @author auto create
- * @since 1.0, 2013-11-01 16:53:56
+ * @since 1.0, 2014-03-19 17:12:54
  */
 class ItemImgDeleteRequest
 {
@@ -13,7 +13,7 @@ class ItemImgDeleteRequest
 	private $id;
 	
 	/** 
-	 * 商品数字ID，必选
+	 * 商品数字ID，必选<br /> 支持最小值为：0
 	 **/
 	private $numIid;
 	

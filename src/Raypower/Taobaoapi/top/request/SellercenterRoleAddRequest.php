@@ -3,22 +3,22 @@
  * TOP API: taobao.sellercenter.role.add request
  * 
  * @author auto create
- * @since 1.0, 2013-11-01 16:53:56
+ * @since 1.0, 2014-03-19 17:12:54
  */
 class SellercenterRoleAddRequest
 {
 	/** 
-	 * 角色描述
+	 * 角色描述<br /> 支持最大长度为：20<br /> 支持的最大列表长度为：20
 	 **/
 	private $description;
 	
 	/** 
-	 * 角色名
+	 * 角色名<br /> 支持最大长度为：20<br /> 支持的最大列表长度为：20
 	 **/
 	private $name;
 	
 	/** 
-	 * 表示卖家昵称
+	 * 表示卖家昵称<br /> 支持最大长度为：500<br /> 支持的最大列表长度为：500
 	 **/
 	private $nick;
 	

@@ -3,7 +3,7 @@
  * TOP API: taobao.item.cseller.add request
  * 
  * @author auto create
- * @since 1.0, 2013-11-01 16:53:56
+ * @since 1.0, 2014-03-19 17:12:54
  */
 class ItemCsellerAddRequest
 {
@@ -31,7 +31,7 @@ class ItemCsellerAddRequest
 	private $autoRepost;
 	
 	/** 
-	 * 叶子类目id
+	 * 叶子类目id<br /> 支持最小值为：0
 	 **/
 	private $cid;
 	
@@ -41,7 +41,7 @@ class ItemCsellerAddRequest
 	private $codPostageId;
 	
 	/** 
-	 * 宝贝描述。字数要大于5个字符，小于25000个字符，受违禁词控制
+	 * 宝贝描述。字数要大于5个字符，小于25000个字符，受违禁词控制<br /> 支持最大长度为：200000<br /> 支持的最大列表长度为：200000
 	 **/
 	private $desc;
 	
@@ -57,7 +57,7 @@ class ItemCsellerAddRequest
 	
 	/** 
 	 * 宝贝特征值，格式为：
-【key1:value1;key2:value2;key3:value3;】，key和value用【:】分隔，key&value之间用【;】分隔，只有在Top支持的特征值才能保存到宝贝上，目前支持的Key列表为：mysize_tp
+【key1:value1;key2:value2;key3:value3;】，key和value用【:】分隔，key&value之间用【;】分隔，只有在Top支持的特征值才能保存到宝贝上，目前支持的Key列表为：mysize_tp<br /> 支持最大长度为：4000<br /> 支持的最大列表长度为：4000
 	 **/
 	private $features;
 	
@@ -217,7 +217,7 @@ class ItemCsellerAddRequest
 	private $locationState;
 	
 	/** 
-	 * 商品数量，取值范围:0-999999的整数。且需要等于Sku所有数量的和
+	 * 商品数量，取值范围:0-999999的整数。且需要等于Sku所有数量的和<br /> 支持最大值为：999999<br /> 支持最小值为：0
 	 **/
 	private $num;
 	
@@ -252,7 +252,7 @@ class ItemCsellerAddRequest
 	private $price;
 	
 	/** 
-	 * 属性值别名。如pid:vid:别名;pid1:vid1:别名1 ，其中：pid是属性id vid是属性值id。总长度不超过511字节
+	 * 属性值别名。如pid:vid:别名;pid1:vid1:别名1 ，其中：pid是属性id vid是属性值id。总长度不超过511字节<br /> 支持最大长度为：511<br /> 支持的最大列表长度为：511
 	 **/
 	private $propertyAlias;
 	
@@ -321,12 +321,12 @@ web_and_wap(既能通过web秒杀也能通过wap秒杀)
 	private $subStock;
 	
 	/** 
-	 * 宝贝标题。不能超过60字符，受违禁词控制
+	 * 宝贝标题。不能超过60字符，受违禁词控制<br /> 支持最大长度为：60<br /> 支持的最大列表长度为：60
 	 **/
 	private $title;
 	
 	/** 
-	 * 发布类型。可选值:fixed(一口价),auction(拍卖)。B商家不能发布拍卖商品，而且拍卖商品是没有SKU的
+	 * 发布类型。可选值:fixed(一口价),auction(拍卖)。B商家不能发布拍卖商品，而且拍卖商品是没有SKU的<br /> 支持最大长度为：100<br /> 支持的最大列表长度为：100
 	 **/
 	private $type;
 	

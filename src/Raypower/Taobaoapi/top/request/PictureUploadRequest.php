@@ -3,22 +3,29 @@
  * TOP API: taobao.picture.upload request
  * 
  * @author auto create
- * @since 1.0, 2013-11-01 16:53:56
+ * @since 1.0, 2014-03-19 17:12:54
  */
 class PictureUploadRequest
 {
+	/** 
+	 * 图片上传的来源，有电脑版本宝贝发布，手机版本宝贝发布
+client:computer电脑版本宝贝使用
+client:phone手机版本宝贝使用
+	 **/
+	private $clientType;
+	
 	/** 
 	 * 包括后缀名的图片标题,不能为空，如Bule.jpg,有些卖家希望图片上传后取图片文件的默认名
 	 **/
 	private $imageInputTitle;
 	
 	/** 
-	 * 图片二进制文件流,不能为空,允许png、jpg、gif图片格式,2M以内。
+	 * 图片二进制文件流,不能为空,允许png、jpg、gif图片格式,3M以内。
 	 **/
 	private $img;
 	
 	/** 
-	 * 图片分类ID，设置具体某个分类ID或设置0上传到默认分类，只能传入一个分类
+	 * 图片分类ID，设置具体某个分类ID或设置0上传到默认分类，只能传入一个分类<br /> 支持最大值为：9223372036854775807<br /> 支持最小值为：0
 	 **/
 	private $pictureCategoryId;
 	
@@ -29,6 +36,17 @@ class PictureUploadRequest
 	
 	private $apiParas = array();
 	
+	public function setClientType($clientType)
+	{
+		$this->clientType = $clientType;
+		$this->apiParas["client_type"] = $clientType;
+	}
+
+	public function getClientType()
+	{
+		return $this->clientType;
+	}
+
 	public function setImageInputTitle($imageInputTitle)
 	{
 		$this->imageInputTitle = $imageInputTitle;

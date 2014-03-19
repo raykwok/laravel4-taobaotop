@@ -3,17 +3,17 @@
  * TOP API: taobao.jipiao.policy.get request
  * 
  * @author auto create
- * @since 1.0, 2013-11-01 16:53:56
+ * @since 1.0, 2014-03-19 17:12:54
  */
 class JipiaoPolicyGetRequest
 {
 	/** 
-	 * type外0，表示机票政策id；type为1，表示机票政策out_product_id
+	 * type外0，表示机票政策id；type为1，表示机票政策out_product_id<br /> 支持最大长度为：64<br /> 支持的最大列表长度为：64
 	 **/
 	private $policyId;
 	
 	/** 
-	 * 0，表示按政策id进行查询；1，表示按政策外部id进行查询
+	 * 0，表示按政策id进行查询；1，表示按政策外部id进行查询<br /> 支持最大值为：1<br /> 支持最小值为：0
 	 **/
 	private $type;
 	

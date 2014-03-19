@@ -3,7 +3,7 @@
  * TOP API: taobao.fenxiao.product.add request
  * 
  * @author auto create
- * @since 1.0, 2013-11-01 16:53:56
+ * @since 1.0, 2014-03-19 17:12:54
  */
 class FenxiaoProductAddRequest
 {
@@ -179,6 +179,11 @@ no:不需要授权
 	 * sku的采购基准价。如果多个，用逗号分隔，并与其他sku信息保持相同顺序
 	 **/
 	private $skuStandardPrices;
+	
+	/** 
+	 * 产品spuID，达尔文产品必须要传spuID，否则不能发布。其他非达尔文产品，看情况传
+	 **/
+	private $spuId;
 	
 	/** 
 	 * 采购基准价格，单位：元。例：“10.56”。必须在0.01元到10000000元之间。
@@ -569,6 +574,17 @@ no:不需要授权
 	public function getSkuStandardPrices()
 	{
 		return $this->skuStandardPrices;
+	}
+
+	public function setSpuId($spuId)
+	{
+		$this->spuId = $spuId;
+		$this->apiParas["spu_id"] = $spuId;
+	}
+
+	public function getSpuId()
+	{
+		return $this->spuId;
 	}
 
 	public function setStandardPrice($standardPrice)

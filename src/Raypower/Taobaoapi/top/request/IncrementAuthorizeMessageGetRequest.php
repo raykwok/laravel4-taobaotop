@@ -3,7 +3,7 @@
  * TOP API: taobao.increment.authorize.message.get request
  * 
  * @author auto create
- * @since 1.0, 2013-11-01 16:53:56
+ * @since 1.0, 2014-03-19 17:12:54
  */
 class IncrementAuthorizeMessageGetRequest
 {
@@ -19,12 +19,12 @@ class IncrementAuthorizeMessageGetRequest
 	private $nick;
 	
 	/** 
-	 * 页码，取值范围:大于零的整数; 默认值:1,即返回第一页数据。
+	 * 页码，取值范围:大于零的整数; 默认值:1,即返回第一页数据。<br /> 支持最小值为：1
 	 **/
 	private $pageNo;
 	
 	/** 
-	 * 每页条数，取值范围:大于零的整数;最大值:200;默认值:40
+	 * 每页条数，取值范围:大于零的整数;最大值:200;默认值:40<br /> 支持最大值为：200<br /> 支持最小值为：1
 	 **/
 	private $pageSize;
 	

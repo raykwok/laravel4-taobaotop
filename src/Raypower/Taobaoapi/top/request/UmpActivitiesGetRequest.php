@@ -3,17 +3,17 @@
  * TOP API: taobao.ump.activities.get request
  * 
  * @author auto create
- * @since 1.0, 2013-11-01 16:53:56
+ * @since 1.0, 2014-03-19 17:12:54
  */
 class UmpActivitiesGetRequest
 {
 	/** 
-	 * 分页的页码
+	 * 分页的页码<br /> 支持最小值为：0
 	 **/
 	private $pageNo;
 	
 	/** 
-	 * 每页的最大条数
+	 * 每页的最大条数<br /> 支持最大值为：50<br /> 支持最小值为：1
 	 **/
 	private $pageSize;
 	

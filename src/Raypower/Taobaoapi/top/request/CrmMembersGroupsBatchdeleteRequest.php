@@ -3,17 +3,17 @@
  * TOP API: taobao.crm.members.groups.batchdelete request
  * 
  * @author auto create
- * @since 1.0, 2013-11-01 16:53:56
+ * @since 1.0, 2014-03-19 17:12:54
  */
 class CrmMembersGroupsBatchdeleteRequest
 {
 	/** 
-	 * 买家的Id集合
+	 * 买家的Id集合<br /> 支持最小值为：1
 	 **/
 	private $buyerIds;
 	
 	/** 
-	 * 会员需要删除的分组
+	 * 会员需要删除的分组<br /> 支持最小值为：1
 	 **/
 	private $groupIds;
 	

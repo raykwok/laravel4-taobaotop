@@ -3,17 +3,17 @@
  * TOP API: taobao.crm.group.move request
  * 
  * @author auto create
- * @since 1.0, 2013-11-01 16:53:56
+ * @since 1.0, 2014-03-19 17:12:54
  */
 class CrmGroupMoveRequest
 {
 	/** 
-	 * 需要移动的分组
+	 * 需要移动的分组<br /> 支持最小值为：1<br /> 支持的最大列表长度为：19
 	 **/
 	private $fromGroupId;
 	
 	/** 
-	 * 目的分组
+	 * 目的分组<br /> 支持最小值为：1<br /> 支持的最大列表长度为：19
 	 **/
 	private $toGroupId;
 	

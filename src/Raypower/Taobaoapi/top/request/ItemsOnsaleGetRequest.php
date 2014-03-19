@@ -3,12 +3,12 @@
  * TOP API: taobao.items.onsale.get request
  * 
  * @author auto create
- * @since 1.0, 2013-11-01 16:53:56
+ * @since 1.0, 2014-03-19 17:12:54
  */
 class ItemsOnsaleGetRequest
 {
 	/** 
-	 * 商品类目ID。ItemCat中的cid字段。可以通过taobao.itemcats.get取到
+	 * 商品类目ID。ItemCat中的cid字段。可以通过taobao.itemcats.get取到<br /> 支持最小值为：0
 	 **/
 	private $cid;
 	

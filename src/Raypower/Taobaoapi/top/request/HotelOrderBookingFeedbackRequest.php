@@ -3,7 +3,7 @@
  * TOP API: taobao.hotel.order.booking.feedback request
  * 
  * @author auto create
- * @since 1.0, 2013-11-01 16:53:56
+ * @since 1.0, 2014-03-19 17:12:54
  */
 class HotelOrderBookingFeedbackRequest
 {
@@ -18,7 +18,7 @@ class HotelOrderBookingFeedbackRequest
 	private $messageId;
 	
 	/** 
-	 * 酒店订单id
+	 * 酒店订单id<br /> 支持最小值为：0
 	 **/
 	private $oid;
 	
@@ -40,7 +40,7 @@ F:失败
 	private $result;
 	
 	/** 
-	 * 指令消息中的session_id
+	 * 指令消息中的session_id<br /> 支持最小值为：0
 	 **/
 	private $sessionId;
 	

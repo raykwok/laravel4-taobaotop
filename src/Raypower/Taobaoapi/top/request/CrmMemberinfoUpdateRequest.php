@@ -3,12 +3,12 @@
  * TOP API: taobao.crm.memberinfo.update request
  * 
  * @author auto create
- * @since 1.0, 2013-11-01 16:53:56
+ * @since 1.0, 2014-03-19 17:12:54
  */
 class CrmMemberinfoUpdateRequest
 {
 	/** 
-	 * 买家昵称
+	 * 买家昵称<br /> 支持最大长度为：32<br /> 支持的最大列表长度为：32
 	 **/
 	private $buyerNick;
 	
@@ -30,7 +30,7 @@ class CrmMemberinfoUpdateRequest
 	/** 
 	 * 会员等级，1：普通客户，2：高级会员，3：高级会员 ，4：至尊vip
 
-只有正常会员才给予升级，对于status 为delete或者blacklist的会员 升级无效
+只有正常会员才给予升级，对于status 为delete或者blacklist的会员 升级无效<br /> 支持最大值为：4<br /> 支持最小值为：1<br /> 支持的最大列表长度为：32
 	 **/
 	private $grade;
 	
@@ -50,7 +50,7 @@ class CrmMemberinfoUpdateRequest
 	private $province;
 	
 	/** 
-	 * 用于描述会员的状态，normal表示正常，blacklist表示黑名单，delete表示删除会员(只有潜在未交易成功的会员才能删除)
+	 * 用于描述会员的状态，normal表示正常，blacklist表示黑名单，delete表示删除会员(只有潜在未交易成功的会员才能删除)<br /> 支持最大长度为：32<br /> 支持的最大列表长度为：32
 	 **/
 	private $status;
 	

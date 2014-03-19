@@ -3,17 +3,17 @@
  * TOP API: taobao.promotionmisc.item.activity.list.get request
  * 
  * @author auto create
- * @since 1.0, 2013-11-01 16:53:56
+ * @since 1.0, 2014-03-19 17:12:54
  */
 class PromotionmiscItemActivityListGetRequest
 {
 	/** 
-	 * 页码。
+	 * 页码。<br /> 支持最小值为：1
 	 **/
 	private $pageNo;
 	
 	/** 
-	 * 每页记录数，最大支持50 。
+	 * 每页记录数，最大支持50 。<br /> 支持最小值为：1
 	 **/
 	private $pageSize;
 	

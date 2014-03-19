@@ -3,7 +3,7 @@
  * TOP API: taobao.crm.membergrade.set request
  * 
  * @author auto create
- * @since 1.0, 2013-11-01 16:53:56
+ * @since 1.0, 2014-03-19 17:12:54
  */
 class CrmMembergradeSetRequest
 {
@@ -13,7 +13,7 @@ class CrmMembergradeSetRequest
 	private $buyerNick;
 	
 	/** 
-	 * 买家会员级别有四种1：普通会员。2：高级会员。 3VIP会员。 4：至尊VIP
+	 * 买家会员级别有四种1：普通会员。2：高级会员。 3VIP会员。 4：至尊VIP<br /> 支持最大值为：4<br /> 支持最小值为：1
 	 **/
 	private $grade;
 	

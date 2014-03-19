@@ -3,7 +3,7 @@
  * TOP API: tmall.items.discount.search request
  * 
  * @author auto create
- * @since 1.0, 2013-11-01 16:53:56
+ * @since 1.0, 2014-03-19 17:12:54
  */
 class TmallItemsDiscountSearchRequest
 {
@@ -49,7 +49,7 @@ pt: 按发布时间排序.
 	private $sort;
 	
 	/** 
-	 * 可以用该字段来实现分页功能。表示查询起始位置，默认从第0条开始，start=10,表示从第10条数据开始查询，start不得大于1000。
+	 * 可以用该字段来实现分页功能。表示查询起始位置，默认从第0条开始，start=10,表示从第10条数据开始查询，start不得大于1000。<br /> 支持最大值为：1000
 	 **/
 	private $start;
 	

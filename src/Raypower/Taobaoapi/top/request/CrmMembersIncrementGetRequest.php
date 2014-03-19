@@ -3,12 +3,12 @@
  * TOP API: taobao.crm.members.increment.get request
  * 
  * @author auto create
- * @since 1.0, 2013-11-01 16:53:56
+ * @since 1.0, 2014-03-19 17:12:54
  */
 class CrmMembersIncrementGetRequest
 {
 	/** 
-	 * 显示第几页的会员，如果输入的页码大于总共的页码数，例如总共10页，但是current_page的值为11，则返回空白页，最小页数为1
+	 * 显示第几页的会员，如果输入的页码大于总共的页码数，例如总共10页，但是current_page的值为11，则返回空白页，最小页数为1<br /> 支持最小值为：1
 	 **/
 	private $currentPage;
 	
@@ -18,12 +18,12 @@ class CrmMembersIncrementGetRequest
 	private $endModify;
 	
 	/** 
-	 * 会员等级，0：店铺客户，1：普通会员，2：高级会员，3：VIP会员， 4：至尊VIP会员
+	 * 会员等级，0：店铺客户，1：普通会员，2：高级会员，3：VIP会员， 4：至尊VIP会员<br /> 支持最大值为：4<br /> 支持最小值为：-1<br /> 支持的最大列表长度为：32
 	 **/
 	private $grade;
 	
 	/** 
-	 * 每页显示的会员数，page_size的值不能超过100，最小值要大于1
+	 * 每页显示的会员数，page_size的值不能超过100，最小值要大于1<br /> 支持最大值为：100<br /> 支持最小值为：1
 	 **/
 	private $pageSize;
 	

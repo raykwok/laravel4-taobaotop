@@ -3,7 +3,7 @@
  * TOP API: taobao.simba.campaign.platform.update request
  * 
  * @author auto create
- * @since 1.0, 2013-11-01 16:53:56
+ * @since 1.0, 2014-03-19 17:12:54
  */
 class SimbaCampaignPlatformUpdateRequest
 {
@@ -18,17 +18,17 @@ class SimbaCampaignPlatformUpdateRequest
 	private $nick;
 	
 	/** 
-	 * 非搜索投放频道代码数组，频道代码必须是直通车非搜索类频道列表中的值。
+	 * 非搜索投放频道代码数组，频道代码必须是直通车非搜索类频道列表中的值。<br /> 支持最大值为：128<br /> 支持最小值为：0
 	 **/
 	private $nonsearchChannels;
 	
 	/** 
-	 * 溢价的百分比，必须是大于等于 1小于等于200的整数
+	 * 溢价的百分比，必须是大于等于 1小于等于200的整数<br /> 支持最大值为：200<br /> 支持最小值为：1
 	 **/
 	private $outsideDiscount;
 	
 	/** 
-	 * 搜索投放频道代码数组，频道代码必须是直通车搜索类频道列表中的值，必须包含淘宝内网。
+	 * 搜索投放频道代码数组，频道代码必须是直通车搜索类频道列表中的值，必须包含淘宝内网。<br /> 支持最大值为：128<br /> 支持最小值为：0
 	 **/
 	private $searchChannels;
 	

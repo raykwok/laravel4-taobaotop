@@ -3,12 +3,12 @@
  * TOP API: taobao.wlb.order.consign request
  * 
  * @author auto create
- * @since 1.0, 2013-11-01 16:53:56
+ * @since 1.0, 2014-03-19 17:12:54
  */
 class WlbOrderConsignRequest
 {
 	/** 
-	 * 物流宝订单编号
+	 * 物流宝订单编号<br /> 支持最大长度为：64<br /> 支持的最大列表长度为：64
 	 **/
 	private $wlbOrderCode;
 	

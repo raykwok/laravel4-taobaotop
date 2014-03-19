@@ -3,7 +3,7 @@
  * TOP API: taobao.item.anchor.get request
  * 
  * @author auto create
- * @since 1.0, 2013-11-01 16:53:56
+ * @since 1.0, 2014-03-19 17:12:54
  */
 class ItemAnchorGetRequest
 {
@@ -13,7 +13,7 @@ class ItemAnchorGetRequest
 	private $catId;
 	
 	/** 
-	 * 宝贝模板类型是人工打标还是自动打标：人工打标为1，自动打标为0.人工和自动打标为-1.
+	 * 宝贝模板类型是人工打标还是自动打标：人工打标为1，自动打标为0.人工和自动打标为-1.<br /> 支持最大值为：1<br /> 支持最小值为：-1
 	 **/
 	private $type;
 	

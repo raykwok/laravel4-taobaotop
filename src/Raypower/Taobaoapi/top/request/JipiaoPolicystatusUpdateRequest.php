@@ -3,12 +3,12 @@
  * TOP API: taobao.jipiao.policystatus.update request
  * 
  * @author auto create
- * @since 1.0, 2013-11-01 16:53:56
+ * @since 1.0, 2014-03-19 17:12:54
  */
 class JipiaoPolicystatusUpdateRequest
 {
 	/** 
-	 * type为0，表示机票政策id；type为1，表示机票政策out_product_id；最大支持政策数100，注意不要如果不要超出字符串的长度限制，超出的话，请调小批量的个数
+	 * type为0，表示机票政策id；type为1，表示机票政策out_product_id；最大支持政策数100，注意不要如果不要超出字符串的长度限制，超出的话，请调小批量的个数<br /> 支持最大长度为：6500<br /> 支持的最大列表长度为：6500
 	 **/
 	private $policyId;
 	
@@ -18,7 +18,7 @@ class JipiaoPolicystatusUpdateRequest
 	private $status;
 	
 	/** 
-	 * 0，表示按政策id进行查询；1，表示按政策外部id进行查询
+	 * 0，表示按政策id进行查询；1，表示按政策外部id进行查询<br /> 支持最大值为：1<br /> 支持最小值为：0
 	 **/
 	private $type;
 	

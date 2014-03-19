@@ -3,7 +3,7 @@
  * TOP API: taobao.hotel.type.name.get request
  * 
  * @author auto create
- * @since 1.0, 2013-11-01 16:53:56
+ * @since 1.0, 2014-03-19 17:12:54
  */
 class HotelTypeNameGetRequest
 {
@@ -13,7 +13,7 @@ class HotelTypeNameGetRequest
 	private $hid;
 	
 	/** 
-	 * 房型全部名称/别名。不能超过60字节
+	 * 房型全部名称/别名。不能超过60字节<br /> 支持最大长度为：60<br /> 支持的最大列表长度为：60
 	 **/
 	private $name;
 	

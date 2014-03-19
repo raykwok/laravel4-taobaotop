@@ -3,7 +3,7 @@
  * TOP API: taobao.logistics.online.confirm request
  * 
  * @author auto create
- * @since 1.0, 2013-11-01 16:53:56
+ * @since 1.0, 2014-03-19 17:12:54
  */
 class LogisticsOnlineConfirmRequest
 {
@@ -28,7 +28,7 @@ class LogisticsOnlineConfirmRequest
 	private $subTid;
 	
 	/** 
-	 * 淘宝交易ID
+	 * 淘宝交易ID<br /> 支持最小值为：1000
 	 **/
 	private $tid;
 	

@@ -3,7 +3,7 @@
  * TOP API: taobao.hotel.room.img.delete request
  * 
  * @author auto create
- * @since 1.0, 2013-11-01 16:53:56
+ * @since 1.0, 2014-03-19 17:12:54
  */
 class HotelRoomImgDeleteRequest
 {
@@ -15,7 +15,7 @@ class HotelRoomImgDeleteRequest
 	/** 
 	 * 图片序号，可选值：1，2，3，4，5。
 如果原图片个数小于等于1，则报错，不能删除图片。
-如果原图片个数小于待删除的图片序号，则报错，图片序号错误。
+如果原图片个数小于待删除的图片序号，则报错，图片序号错误。<br /> 支持的最大列表长度为：1
 	 **/
 	private $position;
 	
