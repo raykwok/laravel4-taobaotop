@@ -1,4 +1,4 @@
-<?php
+<?php namespace Taobao\Top\Request;
 /**
  * TOP API: taobao.trades.sold.incrementv.get request
  * 

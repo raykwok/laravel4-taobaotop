@@ -1,4 +1,4 @@
-<?php
+<?php namespace Taobao\Top\Request;
 /**
  * TOP API: taobao.topats.simba.campkeywordbase.get request
  * 

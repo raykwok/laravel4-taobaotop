@@ -1,4 +1,4 @@
-<?php
+<?php namespace Taobao\Top\Request;
 /**
  * TOP API: alipay.micropay.order.freezepayurl.get request
  * 

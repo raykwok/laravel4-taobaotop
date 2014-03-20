@@ -1,4 +1,4 @@
-<?php
+<?php namespace Taobao\Top\Request;
 /**
  * TOP API: alipay.ebpp.bill.payurl.get request
  * 

@@ -3,7 +3,7 @@
 
 namespace Raypower\Taobaoapi;
 
-use TopClient;
+use Taobao\Top\TopClient;
 use stdClass;
 use Config;
 

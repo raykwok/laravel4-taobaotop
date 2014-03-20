@@ -4,6 +4,7 @@
 namespace Raypower\Taobaoapi\Helper;
 
 use Taobaoapi;
+use Taobao\Top\Request\TbkShopsGetRequest;
 
 class TaobaoapiHelper
 {

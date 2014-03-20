@@ -1,4 +1,4 @@
-<?php
+<?php namespace Taobao\Top\Request;
 /**
  * TOP API: taobao.simba.adgroup.deletedcatmatchs.get request
  * 

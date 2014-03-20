@@ -1,4 +1,4 @@
-<?php
+<?php namespace Taobao\Top;
 class TopClient
 {
 	public $appkey;
