@@ -13,9 +13,7 @@
     },
     "autoload": {
         "classmap": [
-            "src/migrations",
-            "src/Raypower/Taobaoapi/top",
-            "src/Raypower/Taobaoapi/top/request"
+            "src/migrations"
         ],
         "psr-0": {
             "Raypower\\Taobaoapi": "src/"
