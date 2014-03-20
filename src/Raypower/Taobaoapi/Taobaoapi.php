@@ -6,6 +6,7 @@ namespace Raypower\Taobaoapi;
 use Taobao\Top\TopClient;
 use stdClass;
 use Config;
+use Exception;
 
 class Taobaoapi extends TopClient
 {
@@ -189,13 +190,13 @@ class Taobaoapi extends TopClient
      * Set rand appkeys by group
      * @param $group
      * @return $this
-     * @throws \Exception
+     * @throws Exception
      */
     public function setRandAppkeyByGroup($group)
     {
         $groupAppkeys = Config::get('taobaoapi::groupAppkeys');
         if (!isset($groupAppkeys[$group])) {
-            throw new \Exception('No available groups!');
+            throw new Exception('No available groups!');
         }
 
         $appkeys = $groupAppkeys[$group];
