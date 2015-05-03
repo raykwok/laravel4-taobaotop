@@ -7,6 +7,7 @@ use Taobao\Top\TopClient;
 use stdClass;
 use Config;
 use Exception;
+use Log;
 
 class Taobaoapi extends TopClient
 {
@@ -42,7 +43,12 @@ class Taobaoapi extends TopClient
      */
     protected function logCommunicationError($apiName, $requestUrl, $errorCode, $responseTxt)
     {
-        return;
+        Log::alert('taobao api fetch failed', [
+            'apiName' => $apiName,
+            'requestUrl' => $requestUrl,
+            'errorCode' => $errorCode,
+            'responseTxt' => $responseTxt,
+        ]);
     }
 
     /**
